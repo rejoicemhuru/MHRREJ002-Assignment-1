@@ -1,0 +1,61 @@
+---
+title: "STATISTICAL COMPUTING QUARTO"
+format: html
+editor: visual
+---
+
+## Statistical Computing Prac One
+
+### Question 1
+
+Let's access the air quality data set
+
+```{r}
+df <- (airquality)
+View(df)
+```
+
+Now, find all the rows in the air quality data set that have missing values
+
+```{r}
+rows_missing <- which(rowSums(is.na(df)) > 0)
+rows_missing
+```
+
+### Question 2
+
+Find mean, sd, min, and max for each of temp and ozone level
+
+```{r}
+mean(df$Temp); sd(df$Temp); min(df$Temp); max(df$Temp)
+```
+
+Remove rows with missing values to calculate for ozone
+
+```{r}
+new_df <- na.omit(df)
+mean(new_df$Ozone); sd(new_df$Ozone); min(new_df$Ozone); max(new_df$Ozone)
+```
+
+### Question 3
+
+Linear regression with cars data set and calculating beta estimates
+
+```{r}
+View(cars)
+y <- cars$speed
+x <- model.matrix(~ dist, cars)
+beta_hat <- (solve(t(x) %*% x)) %*% t(x) %*% y
+beta_hat
+```
+
+### Question 4
+
+Check that beta estimates are same as when fitting with lm() function
+
+```{r}
+q4 <- lm(speed ~ dist, cars)
+q4
+```
+
+They are the same. Yay!

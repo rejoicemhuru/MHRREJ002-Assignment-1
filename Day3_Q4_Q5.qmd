@@ -1,0 +1,58 @@
+---
+title: "Day 3 Prac Q4 and q5"
+author: "Rejoice Mhuru"
+format: html
+editor: visual
+---
+
+# Day 3 Prac
+
+## Question 4
+
+```{r}
+#Creating the sequence for x in [-2, 2] with incriments of .01
+x <- seq(-2, 2, by = 0.01)
+y <- sin(x)
+
+#Plotting the function f(x)
+plot(x, y, type = "p", main = "Plot of function f(x) = sin(x)", xlab = "x", ylab = "sin(x)", col = "blue", lwd = 2)
+
+```
+
+## Question 5
+
+```{r}
+#generating 1000 values from t-dist with 1 df
+q <- rt(1000, 1)
+#sorting my data because qq-plot compares ordered data
+sortedq = sort(q)
+#creating a matrix to store normal samples that are sorted?
+n_matrix <- matrix(0, 1000, 1000)
+for(i in 1:1000){
+  n_matrix[i, ] <- sort(rnorm(1000))
+}
+
+#getting our expected normal quantiles which are the column means and 
+#then creating a simple "envelope" which is the upper and lower bound (2.5 and 97.5%)
+n_quantiles <- colMeans(n_matrix)
+l = apply(n_matrix, 2, function(col) quantile(col, 0.025))
+u = apply(n_matrix, 2, function(col) quantile(col, 0.975))
+
+#plot
+plot(n_quantiles, sortedq, xlab = "Normal Quantiles", 
+     ylab = "t dist. Quantiles", main = "QQ-Plot", pch = 16, 
+     cex = 0.5, ylim = c(-5, 5))
+#the reference line
+abline(0, 1, col = "red") 
+
+#lower envelope
+lines(n_quantiles, l, col = "blue", lty = 2)
+#upper envelope
+lines(n_quantiles, u, col = "green", lty = 2)
+
+#comparing my answer with qqPlot
+install.packages("car")
+library(car)
+qqPlot(q, envelope = 0.95, ylim = c(-5, 5))
+
+```

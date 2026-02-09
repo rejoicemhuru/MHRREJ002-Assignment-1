@@ -1,0 +1,26 @@
+project:
+  type: website
+
+website:
+  title: "Statistical Computing Assignment 1"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: Prac1.qmd
+        text: Practical 1
+      - href: Day3_Q4_Q5.qmd
+        text: Day 3 Practical (Q4 & Q5)
+      - href: Prac4.qmd
+        text: Practical 4
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+
+editor: visual
+

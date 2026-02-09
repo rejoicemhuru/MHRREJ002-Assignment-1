@@ -1,0 +1,13 @@
+---
+title: "Statistical Computing Assignment 1"
+---
+
+# Statistical Computing Assignment 1
+
+This website contains my submission for Statistical Computing Assignment 1
+
+## Contents
+
+1.  Practical 1
+2.  Practical Day 3 Question 4 and 5
+3.  Practical 4
