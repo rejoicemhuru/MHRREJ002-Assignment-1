@@ -1,0 +1,21 @@
+project:
+  type: website
+
+website:
+  title: "Statistical Computing Assignment 2"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: Parallel_Computing_Practical.qmd
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+
+editor: visual
+

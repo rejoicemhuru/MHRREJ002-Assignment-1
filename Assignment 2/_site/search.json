@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "Parallel_Computing_Practical.html",
+    "href": "Parallel_Computing_Practical.html",
+    "title": "Parallel Computing Prac",
+    "section": "",
+    "text": "Warning: package 'foreach' was built under R version 4.5.2\n\n\n                mean  variance\nresult.1   0.9632571 0.9391871\nresult.2   0.9632571 0.9391871\nresult.3   0.9632571 0.9391871\nresult.4   0.9632571 0.9391871\nresult.5   0.9632571 0.9391871\nresult.6   0.9632571 0.9391871\nresult.7   0.9632571 0.9391871\nresult.8   0.9632571 0.9391871\nresult.9   0.9632571 0.9391871\nresult.10  0.9632571 0.9391871\nresult.11  0.9632571 0.9391871\nresult.12  0.9632571 0.9391871\nresult.13  0.9632571 0.9391871\nresult.14  0.9632571 0.9391871\nresult.15  0.9632571 0.9391871\nresult.16  0.9632571 0.9391871\nresult.17  0.9632571 0.9391871\nresult.18  0.9632571 0.9391871\nresult.19  0.9632571 0.9391871\nresult.20  0.9632571 0.9391871\nresult.21  0.9632571 0.9391871\nresult.22  0.9632571 0.9391871\nresult.23  0.9632571 0.9391871\nresult.24  0.9632571 0.9391871\nresult.25  0.9632571 0.9391871\nresult.26  0.9632571 0.9391871\nresult.27  0.9632571 0.9391871\nresult.28  0.9632571 0.9391871\nresult.29  0.9632571 0.9391871\nresult.30  0.9632571 0.9391871\nresult.31  0.9632571 0.9391871\nresult.32  0.9632571 0.9391871\nresult.33  0.9632571 0.9391871\nresult.34  0.9632571 0.9391871\nresult.35  0.9632571 0.9391871\nresult.36  0.9632571 0.9391871\nresult.37  0.9632571 0.9391871\nresult.38  0.9632571 0.9391871\nresult.39  0.9632571 0.9391871\nresult.40  0.9632571 0.9391871\nresult.41  0.9632571 0.9391871\nresult.42  0.9632571 0.9391871\nresult.43  0.9632571 0.9391871\nresult.44  0.9632571 0.9391871\nresult.45  0.9632571 0.9391871\nresult.46  0.9632571 0.9391871\nresult.47  0.9632571 0.9391871\nresult.48  0.9632571 0.9391871\nresult.49  0.9632571 0.9391871\nresult.50  0.9632571 0.9391871\nresult.51  0.9632571 0.9391871\nresult.52  0.9632571 0.9391871\nresult.53  0.9632571 0.9391871\nresult.54  0.9632571 0.9391871\nresult.55  0.9632571 0.9391871\nresult.56  0.9632571 0.9391871\nresult.57  0.9632571 0.9391871\nresult.58  0.9632571 0.9391871\nresult.59  0.9632571 0.9391871\nresult.60  0.9632571 0.9391871\nresult.61  0.9632571 0.9391871\nresult.62  0.9632571 0.9391871\nresult.63  0.9632571 0.9391871\nresult.64  0.9632571 0.9391871\nresult.65  0.9632571 0.9391871\nresult.66  0.9632571 0.9391871\nresult.67  0.9632571 0.9391871\nresult.68  0.9632571 0.9391871\nresult.69  0.9632571 0.9391871\nresult.70  0.9632571 0.9391871\nresult.71  0.9632571 0.9391871\nresult.72  0.9632571 0.9391871\nresult.73  0.9632571 0.9391871\nresult.74  0.9632571 0.9391871\nresult.75  0.9632571 0.9391871\nresult.76  0.9632571 0.9391871\nresult.77  0.9632571 0.9391871\nresult.78  0.9632571 0.9391871\nresult.79  0.9632571 0.9391871\nresult.80  0.9632571 0.9391871\nresult.81  0.9632571 0.9391871\nresult.82  0.9632571 0.9391871\nresult.83  0.9632571 0.9391871\nresult.84  0.9632571 0.9391871\nresult.85  0.9632571 0.9391871\nresult.86  0.9632571 0.9391871\nresult.87  0.9632571 0.9391871\nresult.88  0.9632571 0.9391871\nresult.89  0.9632571 0.9391871\nresult.90  0.9632571 0.9391871\nresult.91  0.9632571 0.9391871\nresult.92  0.9632571 0.9391871\nresult.93  0.9632571 0.9391871\nresult.94  0.9632571 0.9391871\nresult.95  0.9632571 0.9391871\nresult.96  0.9632571 0.9391871\nresult.97  0.9632571 0.9391871\nresult.98  0.9632571 0.9391871\nresult.99  0.9632571 0.9391871\nresult.100 0.9632571 0.9391871\n\n\n\n\n\n\n\nWarning: package 'MASS' was built under R version 4.5.2\n\n\nWarning: package 'doParallel' was built under R version 4.5.2\n\n\nLoading required package: iterators\n\n\nWarning: package 'iterators' was built under R version 4.5.2\n\n\nLoading required package: parallel\n\n\n[1] \"Serial time: 0.62\"\n\n\n[1] \"Parallel time: 0.56\"\n\n\nThe parallel processing time is 0.2 slower than the serial processing time.\n\n\n\n\n\n[1] \"Probability: 0.932\"\n\n\n\n\n\n\n\n[1] 1.0844412 0.5060559 0.9594941\n\n\n\n\n\n\n\n[[1]]\n[1] \"iterators\" \"foreach\"   \"stats\"     \"graphics\"  \"grDevices\" \"utils\"    \n[7] \"datasets\"  \"methods\"   \"base\"     \n\n[[2]]\n[1] \"iterators\" \"foreach\"   \"stats\"     \"graphics\"  \"grDevices\" \"utils\"    \n[7] \"datasets\"  \"methods\"   \"base\"     \n\n[[3]]\n[1] \"iterators\" \"foreach\"   \"stats\"     \"graphics\"  \"grDevices\" \"utils\"    \n[7] \"datasets\"  \"methods\"   \"base\"     \n\n\n            method time\n1        replicate 0.30\n2   serial foreach 0.34\n3        parLapply 0.17\n4 parallel foreach 0.28"
+  },
+  {
+    "objectID": "Parallel_Computing_Practical.html#question-1",
+    "href": "Parallel_Computing_Practical.html#question-1",
+    "title": "Parallel Computing Prac",
+    "section": "",
+    "text": "Warning: package 'foreach' was built under R version 4.5.2\n\n\n                mean  variance\nresult.1   0.9632571 0.9391871\nresult.2   0.9632571 0.9391871\nresult.3   0.9632571 0.9391871\nresult.4   0.9632571 0.9391871\nresult.5   0.9632571 0.9391871\nresult.6   0.9632571 0.9391871\nresult.7   0.9632571 0.9391871\nresult.8   0.9632571 0.9391871\nresult.9   0.9632571 0.9391871\nresult.10  0.9632571 0.9391871\nresult.11  0.9632571 0.9391871\nresult.12  0.9632571 0.9391871\nresult.13  0.9632571 0.9391871\nresult.14  0.9632571 0.9391871\nresult.15  0.9632571 0.9391871\nresult.16  0.9632571 0.9391871\nresult.17  0.9632571 0.9391871\nresult.18  0.9632571 0.9391871\nresult.19  0.9632571 0.9391871\nresult.20  0.9632571 0.9391871\nresult.21  0.9632571 0.9391871\nresult.22  0.9632571 0.9391871\nresult.23  0.9632571 0.9391871\nresult.24  0.9632571 0.9391871\nresult.25  0.9632571 0.9391871\nresult.26  0.9632571 0.9391871\nresult.27  0.9632571 0.9391871\nresult.28  0.9632571 0.9391871\nresult.29  0.9632571 0.9391871\nresult.30  0.9632571 0.9391871\nresult.31  0.9632571 0.9391871\nresult.32  0.9632571 0.9391871\nresult.33  0.9632571 0.9391871\nresult.34  0.9632571 0.9391871\nresult.35  0.9632571 0.9391871\nresult.36  0.9632571 0.9391871\nresult.37  0.9632571 0.9391871\nresult.38  0.9632571 0.9391871\nresult.39  0.9632571 0.9391871\nresult.40  0.9632571 0.9391871\nresult.41  0.9632571 0.9391871\nresult.42  0.9632571 0.9391871\nresult.43  0.9632571 0.9391871\nresult.44  0.9632571 0.9391871\nresult.45  0.9632571 0.9391871\nresult.46  0.9632571 0.9391871\nresult.47  0.9632571 0.9391871\nresult.48  0.9632571 0.9391871\nresult.49  0.9632571 0.9391871\nresult.50  0.9632571 0.9391871\nresult.51  0.9632571 0.9391871\nresult.52  0.9632571 0.9391871\nresult.53  0.9632571 0.9391871\nresult.54  0.9632571 0.9391871\nresult.55  0.9632571 0.9391871\nresult.56  0.9632571 0.9391871\nresult.57  0.9632571 0.9391871\nresult.58  0.9632571 0.9391871\nresult.59  0.9632571 0.9391871\nresult.60  0.9632571 0.9391871\nresult.61  0.9632571 0.9391871\nresult.62  0.9632571 0.9391871\nresult.63  0.9632571 0.9391871\nresult.64  0.9632571 0.9391871\nresult.65  0.9632571 0.9391871\nresult.66  0.9632571 0.9391871\nresult.67  0.9632571 0.9391871\nresult.68  0.9632571 0.9391871\nresult.69  0.9632571 0.9391871\nresult.70  0.9632571 0.9391871\nresult.71  0.9632571 0.9391871\nresult.72  0.9632571 0.9391871\nresult.73  0.9632571 0.9391871\nresult.74  0.9632571 0.9391871\nresult.75  0.9632571 0.9391871\nresult.76  0.9632571 0.9391871\nresult.77  0.9632571 0.9391871\nresult.78  0.9632571 0.9391871\nresult.79  0.9632571 0.9391871\nresult.80  0.9632571 0.9391871\nresult.81  0.9632571 0.9391871\nresult.82  0.9632571 0.9391871\nresult.83  0.9632571 0.9391871\nresult.84  0.9632571 0.9391871\nresult.85  0.9632571 0.9391871\nresult.86  0.9632571 0.9391871\nresult.87  0.9632571 0.9391871\nresult.88  0.9632571 0.9391871\nresult.89  0.9632571 0.9391871\nresult.90  0.9632571 0.9391871\nresult.91  0.9632571 0.9391871\nresult.92  0.9632571 0.9391871\nresult.93  0.9632571 0.9391871\nresult.94  0.9632571 0.9391871\nresult.95  0.9632571 0.9391871\nresult.96  0.9632571 0.9391871\nresult.97  0.9632571 0.9391871\nresult.98  0.9632571 0.9391871\nresult.99  0.9632571 0.9391871\nresult.100 0.9632571 0.9391871"
+  },
+  {
+    "objectID": "Parallel_Computing_Practical.html#question-2",
+    "href": "Parallel_Computing_Practical.html#question-2",
+    "title": "Parallel Computing Prac",
+    "section": "",
+    "text": "Warning: package 'MASS' was built under R version 4.5.2\n\n\nWarning: package 'doParallel' was built under R version 4.5.2\n\n\nLoading required package: iterators\n\n\nWarning: package 'iterators' was built under R version 4.5.2\n\n\nLoading required package: parallel\n\n\n[1] \"Serial time: 0.62\"\n\n\n[1] \"Parallel time: 0.56\"\n\n\nThe parallel processing time is 0.2 slower than the serial processing time."
+  },
+  {
+    "objectID": "Parallel_Computing_Practical.html#question-3",
+    "href": "Parallel_Computing_Practical.html#question-3",
+    "title": "Parallel Computing Prac",
+    "section": "",
+    "text": "[1] \"Probability: 0.932\""
+  },
+  {
+    "objectID": "Parallel_Computing_Practical.html#question-4",
+    "href": "Parallel_Computing_Practical.html#question-4",
+    "title": "Parallel Computing Prac",
+    "section": "",
+    "text": "[1] 1.0844412 0.5060559 0.9594941"
+  },
+  {
+    "objectID": "Parallel_Computing_Practical.html#question-5",
+    "href": "Parallel_Computing_Practical.html#question-5",
+    "title": "Parallel Computing Prac",
+    "section": "",
+    "text": "[[1]]\n[1] \"iterators\" \"foreach\"   \"stats\"     \"graphics\"  \"grDevices\" \"utils\"    \n[7] \"datasets\"  \"methods\"   \"base\"     \n\n[[2]]\n[1] \"iterators\" \"foreach\"   \"stats\"     \"graphics\"  \"grDevices\" \"utils\"    \n[7] \"datasets\"  \"methods\"   \"base\"     \n\n[[3]]\n[1] \"iterators\" \"foreach\"   \"stats\"     \"graphics\"  \"grDevices\" \"utils\"    \n[7] \"datasets\"  \"methods\"   \"base\"     \n\n\n            method time\n1        replicate 0.30\n2   serial foreach 0.34\n3        parLapply 0.17\n4 parallel foreach 0.28"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Statistical Computing Assignment",
+    "section": "",
+    "text": "This website contains my submission for Statistical Computing Assignment 2\n\n\n\nParallel Computing Practical Questions"
+  },
+  {
+    "objectID": "index.html#contents",
+    "href": "index.html#contents",
+    "title": "Statistical Computing Assignment",
+    "section": "",
+    "text": "Parallel Computing Practical Questions"
+  }
+]

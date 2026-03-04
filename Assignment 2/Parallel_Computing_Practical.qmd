@@ -1,0 +1,142 @@
+---
+title: "Parallel Computing Prac"
+author: "Rejoice Mhuru"
+format: html
+editor: visual
+---
+
+# Parallel Computing Practical
+
+## Question 1
+
+```{r}
+#| echo: false
+library(foreach)
+samp <- rexp(1000, 1)
+# .combine makes the stuff into a list or row instead of having to assign individually into an empty list
+result <- foreach(i = 1:100, .combine = rbind) %do% {
+  c(mean = mean(samp), variance = var(samp))
+}
+result
+```
+
+## Question 2
+
+```{r}
+#| echo: false
+library(MASS)
+library(foreach)
+library(doParallel)
+
+cl = makeCluster(3)
+registerDoParallel(cl)
+
+data = galaxies
+#Serial
+serial_time <- system.time({
+  serial_result <- foreach(i = 1:1000, .combine = c) %do% {
+  median(sample(data, replace = TRUE))
+  }
+})
+
+#Parallel
+parallel_time <- system.time({
+  par_result <- foreach(i = 1:1000, .combine = c, .packages = "MASS") %dopar% {
+    median(sample(data, replace = TRUE))
+  }
+})
+
+#stopping the clusters when its done
+stopCluster(cl)
+
+#comparing times, we use [3] because we want the time elapsed
+print(paste("Serial time:", serial_time[3]))
+print(paste("Parallel time:", parallel_time[3]))
+```
+
+The parallel processing time is 0.2 slower than the serial processing time.
+
+## Question 3
+
+```{r}
+#| echo: false
+library(foreach)
+library(doParallel)
+
+cl <- makeCluster(3)
+registerDoParallel(cl)
+
+#running simulations
+results <- foreach(i = 1:1000, .combine = c) %dopar% {
+  og_sample <- rexp(50, 1)
+  bootstrap_means <- numeric(1000)
+  for(b in 1:1000){
+    boot_samp <- sample(og_sample, size = 50, replace = TRUE)
+    bootstrap_means[b] <- mean(boot_samp)
+  }
+  CI_lower <- quantile(bootstrap_means, 0.05/2)
+  CI_upper <- quantile(bootstrap_means, 1 - 0.05/2)
+  
+  as.numeric(CI_lower <= 1 && CI_upper >= 1)
+}
+
+stopCluster(cl)
+#calculate probability
+coverage <- mean(results)
+print(paste("Probability:", coverage))
+```
+
+## Question 4
+
+```{r}
+#| echo: false
+library(foreach)
+library(iterators)
+set.seed(1234)
+
+#creating an iterator function
+results <- foreach(x = irnorm(5, count = 3), .combine = c) %do% {
+  max(x)
+} 
+
+print(results)
+```
+
+## Question 5
+
+```{r}
+#| echo: false
+library(foreach)
+library(doParallel)
+library(parallel)
+library(iterators)
+
+q4 <- function(){
+  foreach(x = irnorm(5, count = 3), .combine = c) %do% 
+  max(x)
+}
+
+#comparing methods
+#replicate 
+m1 <- system.time(replicate(100, q4()))
+
+#serial foreach
+m2 <- system.time(foreach(i = 1:100, .combine = cbind) %do% q4())
+
+#parLapply
+cl <- makeCluster(3)
+clusterExport(cl, "q4")
+clusterEvalQ(cl, {library(foreach); library(iterators)})
+m3 <- system.time(parLapply(cl, 1:100, function(i)q4()))
+stopCluster(cl)
+
+#parallel
+cl <- makeCluster(3)
+registerDoParallel(cl)
+m4 <- system.time(foreach(i = 1:100, .combine = cbind, .packages = c("foreach", "iterators")) %dopar% q4())
+stopCluster(cl)
+
+#results
+data.frame(method = c("replicate", "serial foreach", "parLapply", "parallel foreach"),
+           time = round(c(m1[3], m2[3], m3[3], m4[3]), 4))
+```
